@@ -16,3 +16,13 @@ So, to do it efficiently just set launch url as swagger so now this time it show
 IN THIS PROJECT EMPLOYEE AND WEATHER FORECAST ARE KNOWS AS MODEL
 
 AND VIEW IS NOT PRESENT IN THIS AS THIS IS API, IT WILL BE PRESENT IN WEB APP.
+
+Technically u can perform any operation(select,delete,update,insert) from any HTTP verb(put,patch,get etc) bt u should not do that, it's nt the 
+r8 standard. u should always flw r8 standrd. plus if u nt using crrct http verb so may be u have 2 r8 more code for same operation which u can neglect
+when using r8 htttp verbs for r8 operation.(like if in httppost & httpput in both u r using to insert a record,so in httpput the code will be more
+bcoz their u have to check for obj to not be empty bt in post u don't have 2 tht).
+
+In URL u write string datatyp value also as int datatypevalue bt in body u write string datatyp value as stringDatatypValue i.e inside "".
+In URL u initializa value after methodName as ?id=2&name=Abhay....etc.
+
+For Route for eg. ("{id}/{name}") in URL only u have to pass like this after methodName - /2/Abhay
