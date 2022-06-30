@@ -1,19 +1,26 @@
 using CONNECT_API_TO_DB;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddDbContext<ApiDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("APIDBConnectionString") ??
-    throw new InvalidOperationException("Connection string 'APIDBConnectionString' not found.")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("WebAPIDBConnection") ??
+    throw new InvalidOperationException("Connection string 'WebAPIDBConnection' not found.")));
+
+builder.Services.AddAutoMapper(typeof(Program));
+
+builder.Services.AddControllers()
+    .AddJsonOptions(options => options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
 builder.Services.AddControllers();
+
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>CONNECT API TO DB</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>80e2e8a4-6433-4ef8-b690-8c0c2fde58c0</ProjectGuid>
+  <FullPath>E:\KelltonTech\.NET training kellton\Real Training Started\AllAssignmentsAfterGaneshLeft\Web-Api\CONNECT API TO DB\CONNECT API TO DB.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResults>
+    <AnalysisResult Id="FilesToAnalyze" Location="E:\KelltonTech\.NET training kellton\Real Training Started\AllAssignmentsAfterGaneshLeft\Web-Api\CONNECT API TO DB\.sonarqube\conf\0\FilesToAnalyze.txt" />
+  </AnalysisResults>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">E:\KelltonTech\.NET training kellton\Real Training Started\AllAssignmentsAfterGaneshLeft\Web-Api\CONNECT API TO DB\.sonarqube\out\0\Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">E:\KelltonTech\.NET training kellton\Real Training Started\AllAssignmentsAfterGaneshLeft\Web-Api\CONNECT API TO DB\.sonarqube\out\0</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <TargetFramework>net6.0</TargetFramework>
+</ProjectInfo>

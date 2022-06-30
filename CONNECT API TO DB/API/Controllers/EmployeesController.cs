@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿using CONNECT_API_TO_DB;
+using CONNECT_API_TO_DB.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using CONNECT_API_TO_DB;
-using CONNECT_API_TO_DB.Entities;
 
 namespace API.Controllers
 {
@@ -15,13 +10,11 @@ namespace API.Controllers
     public class EmployeesController : ControllerBase
     {
         private readonly ApiDbContext _context;
-
         public EmployeesController(ApiDbContext context)
         {
             _context = context;
         }
-
-        // GET: api/Employees
+        
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Employee>>> GetEmployees()
         {
@@ -32,7 +25,6 @@ namespace API.Controllers
             return await _context.Employees.ToListAsync();
         }
 
-        // GET: api/Employees/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Employee>> GetEmployee(int id)
         {
@@ -41,17 +33,14 @@ namespace API.Controllers
               return NotFound();
           }
             var employee = await _context.Employees.FindAsync(id);
-
             if (employee == null)
             {
                 return NotFound();
             }
-
             return employee;
         }
 
         // PUT: api/Employees/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutEmployee(int id, Employee employee)
         {
@@ -59,9 +48,7 @@ namespace API.Controllers
             {
                 return BadRequest();
             }
-
             _context.Entry(employee).State = EntityState.Modified;
-
             try
             {
                 await _context.SaveChangesAsync();
@@ -77,12 +64,10 @@ namespace API.Controllers
                     throw;
                 }
             }
-
             return NoContent();
         }
 
         // POST: api/Employees
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Employee>> PostEmployee(Employee employee)
         {
@@ -92,7 +77,6 @@ namespace API.Controllers
           }
             _context.Employees.Add(employee);
             await _context.SaveChangesAsync();
-
             return CreatedAtAction("GetEmployee", new { id = employee.Id }, employee);
         }
 
@@ -109,10 +93,8 @@ namespace API.Controllers
             {
                 return NotFound();
             }
-
             _context.Employees.Remove(employee);
             await _context.SaveChangesAsync();
-
             return NoContent();
         }
 

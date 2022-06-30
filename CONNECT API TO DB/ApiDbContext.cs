@@ -1,11 +1,17 @@
-﻿using Microsoft.EntityFrameworkCore;
-using CONNECT_API_TO_DB.Entities;
+﻿using CONNECT_API_TO_DB.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace CONNECT_API_TO_DB
 {
     public class ApiDbContext : DbContext
     {
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<ClassRoom> ClassRooms { get; set; }
+        public ApiDbContext()
+        {
+
+        }
         public ApiDbContext(DbContextOptions options)
         : base(options)
         {

@@ -1,0 +1,14 @@
+﻿E:\KelltonTech\.NET training kellton\Real Training Started\AllAssignmentsAfterGaneshLeft\Web-Api\CONNECT API TO DB\API\ApiModel\ClassRoomApiModel.cs
+E:\KelltonTech\.NET training kellton\Real Training Started\AllAssignmentsAfterGaneshLeft\Web-Api\CONNECT API TO DB\API\ApiModel\TeacherAndClassRoomApiModel.cs
+E:\KelltonTech\.NET training kellton\Real Training Started\AllAssignmentsAfterGaneshLeft\Web-Api\CONNECT API TO DB\API\ApiModel\TeacherApiModel.cs
+E:\KelltonTech\.NET training kellton\Real Training Started\AllAssignmentsAfterGaneshLeft\Web-Api\CONNECT API TO DB\API\Controllers\EmployeesController.cs
+E:\KelltonTech\.NET training kellton\Real Training Started\AllAssignmentsAfterGaneshLeft\Web-Api\CONNECT API TO DB\API\Controllers\TeachersController.cs
+E:\KelltonTech\.NET training kellton\Real Training Started\AllAssignmentsAfterGaneshLeft\Web-Api\CONNECT API TO DB\API\MappingConfigurations\AutoMapperProfile.cs
+E:\KelltonTech\.NET training kellton\Real Training Started\AllAssignmentsAfterGaneshLeft\Web-Api\CONNECT API TO DB\API\Program.cs
+E:\KelltonTech\.NET training kellton\Real Training Started\AllAssignmentsAfterGaneshLeft\Web-Api\CONNECT API TO DB\API\obj\Debug\net6.0\API.GlobalUsings.g.cs
+E:\KelltonTech\.NET training kellton\Real Training Started\AllAssignmentsAfterGaneshLeft\Web-Api\CONNECT API TO DB\API\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+E:\KelltonTech\.NET training kellton\Real Training Started\AllAssignmentsAfterGaneshLeft\Web-Api\CONNECT API TO DB\API\obj\Debug\net6.0\API.AssemblyInfo.cs
+E:\KelltonTech\.NET training kellton\Real Training Started\AllAssignmentsAfterGaneshLeft\Web-Api\CONNECT API TO DB\API\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cs
+E:\KelltonTech\.NET training kellton\Real Training Started\AllAssignmentsAfterGaneshLeft\Web-Api\CONNECT API TO DB\API\appsettings.Development.json
+E:\KelltonTech\.NET training kellton\Real Training Started\AllAssignmentsAfterGaneshLeft\Web-Api\CONNECT API TO DB\API\appsettings.json
+E:\KelltonTech\.NET training kellton\Real Training Started\AllAssignmentsAfterGaneshLeft\Web-Api\CONNECT API TO DB\API\Properties\launchSettings.json
