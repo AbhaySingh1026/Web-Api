@@ -103,7 +103,7 @@ namespace API.Controllers
             return NoContent();
         }
         [HttpPatch("{teacherId}")]
-        public async Task<IActionResult> PatchTeacher(int teacherId,TeacherApiModel teacherApiModel)
+        public async Task<IActionResult> PatchTeacher(int teacherId, Tuple<string> tuple)
         {
             if(_context.Teachers == null)
             {
@@ -114,7 +114,7 @@ namespace API.Controllers
             {
                 return NotFound();
             }
-            teacher.Name = teacherApiModel.Name;
+            teacher.Name = tuple.Item1;
             _context.Teachers.Update(teacher);
             await _context.SaveChangesAsync();
             return Ok();
